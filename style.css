@@ -1,3 +1,10 @@
+/* Colors */
+:root{
+    --violet: violet;
+    --darkblue:darkblue;
+    --golden:goldenrod;
+    --grey: lightgrey;
+}
 *{
     padding: 0;
     margin:0;
@@ -10,11 +17,11 @@ font-family: Arial, Helvetica, sans-serif;
 header {
     background-color: rgb(12, 92, 172);
     height: 60px;
-    border:2px dashed black;
+    border:2px solid black;
     }
 .container{
     max-width: 1800px;
-    height: 800px;
+    height: auto;
 
 }
 .barra{
@@ -22,5 +29,50 @@ header {
     min-width: 500px;
     margin: 10px 200px;
     border:2px dashed black;
-    background-color: goldenrod;
+    background-color: var(--golden);
+    padding: 3px;
+}
+section{
+    height: auto;
+    block-size: block;
+    padding:20px 300px
+}
+.rettangolo{
+    height: 250px;
+    width: 0 250px;
+    border: solid black;
+    background-color:var(--violet);
+}
+.contenitore{
+    height: auto;
+    block-size: block;
+    padding:20px 250px
+}
+.blocco{
+    height: 250px;
+    max-width: 800px;
+    min-width: 200px;
+    border: 2px dashed black;
+}
+.flex{
+    display:flex;
+}
+.suddiviso{
+background-color: lightblue;
+width: 70%;
+}
+.altro{
+    background-color: pink;
+    width: 30%;
+    border: 1px dashed black;
+
+}
+
+
+
+.darkblue{
+    background-color: var(--darkblue);
+}
+.grey{
+    background-color: var(--grey);
 }

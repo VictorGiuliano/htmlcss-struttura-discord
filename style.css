@@ -4,6 +4,8 @@
     --darkblue:darkblue;
     --golden:goldenrod;
     --grey: lightgrey;
+    --dodger:dodgerblue;
+    --green:darkgreen;
 }
 *{
     padding: 0;
@@ -20,9 +22,8 @@ header {
     border:2px solid black;
     }
 .container{
-    max-width: 1800px;
-    height: auto;
-
+    width: auto;
+    height: 2000px;
 }
 .barra{
     height:30px;
@@ -58,16 +59,27 @@ section{
     display:flex;
 }
 .suddiviso{
-background-color: lightblue;
+background-color: var(--dodger);
 width: 70%;
 }
 .altro{
     background-color: pink;
     width: 30%;
     border: 1px dashed black;
+}
+.grosso{
+    height: auto;
+    block-size: block;    
+    background-color:var(--grey);
+    padding: 20px 250px;
+}
+.grande{
+    height: 700px;
+    min-width: 200px;
+    border: 2px dashed black;
+    background-color: var(--green);
 
 }
-
 
 
 .darkblue{

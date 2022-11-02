@@ -6,6 +6,7 @@
     --grey: lightgrey;
     --dodger:dodgerblue;
     --green:darkgreen;
+    --marine:aquamarine;
 }
 *{
     padding: 0;
@@ -26,9 +27,11 @@ header {
     height: 2000px;
 }
 .barra{
+    align-content: space-between;
     height:30px;
     min-width: 500px;
     margin: 10px 200px;
+    max-width: 800px;
     border:2px dashed black;
     background-color: var(--golden);
     padding: 3px;
@@ -74,13 +77,54 @@ width: 70%;
     padding: 20px 250px;
 }
 .grande{
-    height: 700px;
+    height: 600px;
     min-width: 200px;
     border: 2px dashed black;
     background-color: var(--green);
 
 }
-
+.wall{
+    height: auto;
+    block-size: block;    
+    background-color:var(--grey);
+    padding: 20px 250px;
+    background-color: black;
+}
+.griglia{
+    height: 400px;
+    max-width: 800px;
+    min-width: 200px;
+    border: 3px dashed black;
+}
+.left{
+    background-color: rgb(255, 138, 157);
+    width: calc(75%/2);
+    border: 2px dashed black;
+}
+.right{
+    background-color:aqua;
+    min-height: 50px;
+    width: calc(100%/4);
+    border: 2px dashed white; 
+}
+hr{
+    color: white;
+}
+footer{
+    background-color: black;
+    height: 60px;
+    border:2px solid black;
+}
+.ret-footer{
+    align-content: space-between;
+    height:30px;
+    min-width: 500px;
+    margin: 10px 200px;
+    max-width: 800px;
+    border:2px dashed black;
+    background-color: var(--marine);
+    padding: 3px;
+}
 
 .darkblue{
     background-color: var(--darkblue);

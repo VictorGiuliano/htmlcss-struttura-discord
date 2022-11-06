@@ -1,4 +1,4 @@
-/* Colors */
+    /* Colors */
 :root{
     --violet: violet;
     --darkblue:darkblue;
@@ -7,6 +7,7 @@
     --dodger:dodgerblue;
     --green:darkgreen;
     --marine:aquamarine;
+    --pink:hwb(350 54% 0%);
 }
 *{
     padding: 0;
@@ -27,14 +28,26 @@ header {
     height: 2000px;
 }
 .barra{
-    align-content: space-between;
-    height:30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height:40px;
     min-width: 500px;
     margin: 10px 200px;
     max-width: 800px;
     border:2px dashed black;
     background-color: var(--golden);
-    padding: 3px;
+}
+.barra > *{
+    flex-basis: 20%;
+}
+.barra-menu{
+    flex-grow: 1;
+    text-align: center;
+}
+.barra-action{
+    text-align: right;
 }
 section{
     height: auto;
@@ -66,7 +79,7 @@ background-color: var(--dodger);
 width: 70%;
 }
 .altro{
-    background-color: pink;
+    background-color:var(--pink);
     width: 30%;
     border: 1px dashed black;
 }
@@ -97,7 +110,7 @@ width: 70%;
     border: 3px dashed black;
 }
 .left{
-    background-color: rgb(255, 138, 157);
+    background-color: hwb(350 54% 0%);
     width: calc(75%/2);
     border: 2px dashed black;
 }
@@ -114,18 +127,23 @@ footer{
     background-color: black;
     height: 60px;
     border:2px solid black;
+    
 }
 .ret-footer{
-    align-content: space-between;
+    align-self: space-between;
+    align-content: flex-end;
     height:30px;
     min-width: 500px;
-    margin: 10px 200px;
+    margin-bottom: 0;
     max-width: 800px;
     border:2px dashed black;
     background-color: var(--marine);
-    padding: 3px;
+    padding: 0 3px;
 }
-
+button{
+    align-self:space-between;
+    background-color: var(--violet);
+}
 .darkblue{
     background-color: var(--darkblue);
 }

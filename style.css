@@ -73,6 +73,8 @@ section{
 }
 .flex{
     display:flex;
+    align-self: center;
+    justify-content: space-between;
 }
 .suddiviso{
 background-color: var(--dodger);
@@ -127,18 +129,23 @@ footer{
     background-color: black;
     height: 60px;
     border:2px solid black;
+    align-items: center;
+    padding:10px 200px;
     
 }
 .ret-footer{
-    align-self: space-between;
-    align-content: flex-end;
-    height:30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height:40px;
     min-width: 500px;
     margin-bottom: 0;
-    max-width: 800px;
+    max-width: 900px;
     border:2px dashed black;
     background-color: var(--marine);
     padding: 0 3px;
+    width: 850px;
 }
 button{
     align-self:space-between;
